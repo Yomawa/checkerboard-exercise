@@ -57,10 +57,10 @@ for (var i=0; i<63; i++){
 	document.body.appendChild(div);
 	
 	if(i%2===0){
-		div.style.backgroundColor="black";
+		div.style.backgroundColor="#" + (Math.round(Math.random() * 0XFFFFFF)).toString(16);
 	}
 	else{
-		div.style.backgroundColor="red";
+		div.style.backgroundColor="#" + (Math.round(Math.random() * 0XFFFFFF)).toString(16);
 	}
 	}
 
