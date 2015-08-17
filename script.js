@@ -47,13 +47,34 @@ function print(){
 	}
 }
 */
-
-for (var i=0; i<63; i++){
+//grediant
+var n = 1;
+for (var i=0; i<81; i++){
 	var div = document.createElement("div");
 	div.style.width="11.1%";
 	div.style.paddingBottom="11.1%";
 	div.style.float="left";
-	/*div.style.backgroundColor="red";*/
+	document.body.appendChild(div);
+	if(i%9===0 && i!==0){
+		n=n-0.1;
+	}
+	
+	if(i%2===0){
+		div.style.backgroundColor="rgba(102,178,255,"+n+")";
+	}
+
+	else{
+		div.style.backgroundColor="rgba(255,0,255,"+n+")";
+	}
+	}
+
+
+	/*for (var i=0; i<81; i++){
+	var div = document.createElement("div");
+	div.style.width="11.1%";
+	div.style.paddingBottom="11.1%";
+	div.style.float="left";
+	div.style.backgroundColor="red";
 	document.body.appendChild(div);
 	
 	if(i%2===0){
@@ -63,5 +84,14 @@ for (var i=0; i<63; i++){
 		div.style.backgroundColor="red";
 	}
 	}
+*/
+	/*var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
+my_gradient.addColorStop(0, "black");
+my_gradient.addColorStop(1, "white");
+ctx.fillStyle = my_gradient;
+ctx.fillRect(20, 20, 150, 100);
+*/
 
 	
